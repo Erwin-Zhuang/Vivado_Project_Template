@@ -1,0 +1,18 @@
+# Vivado generated directories
+.Xil/
+build/
+
+# Vivado logs and journals
+*.log
+*.jou
+*.str
+
+# Vivado backups / temporary outputs
+*.backup.jou
+*.backup.log
+*.wdb
+*.wcfg
+
+# Editor / OS
+.DS_Store
+Thumbs.db

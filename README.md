@@ -24,26 +24,9 @@
 
 ### 使用方法
 
-在 Vivado Tcl Console 中执行：
-
-```tcl
-cd <repo>/scripts
-source create_project.tcl
-```
-
-或命令行批处理运行：
-
 ```powershell
+vivado -mode batch -source .\scripts\package_ip.tcl
 vivado -mode batch -source .\scripts\create_project.tcl
 ```
 
-执行后会：
 
-1. 删除并重建 `build/`
-2. 创建工程 `my_project`
-3. 创建空 Block Design `block_design`
-
-### 注意事项
-
-- `create_project.tcl` 每次运行都会清空 `build/`，不要把未备份结果放在该目录。
-- 该模板当前不自动添加 HDL 源码/约束文件，需要后续手动添加或扩展 Tcl。

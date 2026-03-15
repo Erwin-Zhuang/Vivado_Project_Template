@@ -133,8 +133,8 @@ puts "Bitstream generation completed!"
 # ============================================================
 # Save project
 # ============================================================
-save_project [current_project]
-puts "Project saved!"
+# save_project [current_project]
+# puts "Project saved!"
 
 # ============================================================
 # Report file locations

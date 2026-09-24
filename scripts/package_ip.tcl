@@ -53,6 +53,9 @@ proc package_one_ip {ip_dir ip_name project_part} {
     # 默认 top module/entity == 文件夹名
     set_property top $ip_name [current_fileset]
 
+    puts "Synthesizing $ip_name ..."
+    synth_design -top $ip_name -part $project_part -mode out_of_context
+
     ipx::package_project -root_dir $ip_dir -vendor user.org -library user -taxonomy /UserIP -force
     set core [ipx::current_core]
     set_property name $ip_name $core
